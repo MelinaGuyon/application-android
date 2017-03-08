@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="16dp"
+    tools:context="com.example.acaudron.myapplication.MainActivity"
+    android:fitsSystemWindows="true"
+    android:background="@color/easy">
+
+    <EditText
+        android:id="@+id/editNumAction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="0"
+        android:textAlignment="center"
+        android:inputType="number"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff"
+        android:textColor="@color/medium"
+        android:padding="30dp"
+        android:textCursorDrawable="@color/medium" />
+
+    <SeekBar
+        android:id="@+id/numberAction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="30"
+        android:progressTint="#ffffff"
+        android:layout_marginBottom="17dp"
+        android:layout_above="@+id/editNumAction"
+        android:layout_alignLeft="@+id/editNumAction"
+        android:layout_alignStart="@+id/editNumAction"
+        android:layout_alignRight="@+id/editNumAction"
+        android:layout_alignEnd="@+id/editNumAction"
+        android:padding="30dp"
+        android:thumbTint="#ffffff" />
+
+    <Button
+        android:text="PLAY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/changeActivity"
+        android:layout_below="@+id/editNumAction"
+        android:layout_alignLeft="@+id/editNumAction"
+        android:layout_alignStart="@+id/editNumAction"
+        android:layout_marginTop="83dp"
+        android:layout_alignRight="@+id/editNumAction"
+        android:layout_alignEnd="@+id/editNumAction"
+        android:background="#ffffff"
+        android:textColor="@color/medium" />
+
+    <TextView
+        android:id="@+id/numberView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="40sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="49dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
